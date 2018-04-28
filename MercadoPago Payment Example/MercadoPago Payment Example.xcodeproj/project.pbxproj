@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585052094D6ED00D9DFC1 /* AppDelegate.swift */; };
 		A79585082094D6ED00D9DFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585072094D6ED00D9DFC1 /* ViewController.swift */; };
-		A795850B2094D6ED00D9DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79585092094D6ED00D9DFC1 /* Main.storyboard */; };
 		A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795850C2094D6ED00D9DFC1 /* Assets.xcassets */; };
 		A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */; };
 		A795851B2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */; };
+		A79585292094DCC800D9DFC1 /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79585282094DCC800D9DFC1 /* AmountView.xib */; };
+		A79585302094E3F000D9DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A795852E2094E3F000D9DFC1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MercadoPago Payment Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79585052094D6ED00D9DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79585072094D6ED00D9DFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A795850A2094D6ED00D9DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A795850C2094D6ED00D9DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A795850F2094D6ED00D9DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A79585112094D6ED00D9DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A79585162094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MercadoPago Payment ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoPago_Payment_ExampleTests.swift; sourceTree = "<group>"; };
 		A795851C2094D6ED00D9DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79585282094DCC800D9DFC1 /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
+		A795852F2094E3F000D9DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,12 @@
 		A79585042094D6ED00D9DFC1 /* MercadoPago Payment Example */ = {
 			isa = PBXGroup;
 			children = (
+				A79585272094DC2D00D9DFC1 /* ViewControllers */,
+				A79585262094DC2400D9DFC1 /* Models */,
+				A79585252094DC1400D9DFC1 /* Views */,
 				A79585052094D6ED00D9DFC1 /* AppDelegate.swift */,
-				A79585072094D6ED00D9DFC1 /* ViewController.swift */,
-				A79585092094D6ED00D9DFC1 /* Main.storyboard */,
 				A795850C2094D6ED00D9DFC1 /* Assets.xcassets */,
+				A795852E2094E3F000D9DFC1 /* Main.storyboard */,
 				A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */,
 				A79585112094D6ED00D9DFC1 /* Info.plist */,
 			);
@@ -94,6 +98,29 @@
 				A795851C2094D6ED00D9DFC1 /* Info.plist */,
 			);
 			path = "MercadoPago Payment ExampleTests";
+			sourceTree = "<group>";
+		};
+		A79585252094DC1400D9DFC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A79585282094DCC800D9DFC1 /* AmountView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A79585262094DC2400D9DFC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A79585272094DC2D00D9DFC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A79585072094D6ED00D9DFC1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +208,8 @@
 			files = (
 				A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */,
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
-				A795850B2094D6ED00D9DFC1 /* Main.storyboard in Resources */,
+				A79585292094DCC800D9DFC1 /* AmountView.xib in Resources */,
+				A79585302094E3F000D9DFC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +251,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A79585092094D6ED00D9DFC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A795850A2094D6ED00D9DFC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A795850F2094D6ED00D9DFC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A795852E2094E3F000D9DFC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A795852F2094E3F000D9DFC1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
