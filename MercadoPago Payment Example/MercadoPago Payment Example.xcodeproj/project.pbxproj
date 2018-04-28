@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585052094D6ED00D9DFC1 /* AppDelegate.swift */; };
+		A79585082094D6ED00D9DFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585072094D6ED00D9DFC1 /* ViewController.swift */; };
+		A795850B2094D6ED00D9DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79585092094D6ED00D9DFC1 /* Main.storyboard */; };
+		A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795850C2094D6ED00D9DFC1 /* Assets.xcassets */; };
+		A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */; };
+		A795851B2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A79585172094D6ED00D9DFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79584FA2094D6ED00D9DFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79585012094D6ED00D9DFC1;
+			remoteInfo = "MercadoPago Payment Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MercadoPago Payment Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79585052094D6ED00D9DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79585072094D6ED00D9DFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A795850A2094D6ED00D9DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A795850C2094D6ED00D9DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A795850F2094D6ED00D9DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79585112094D6ED00D9DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79585162094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MercadoPago Payment ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoPago_Payment_ExampleTests.swift; sourceTree = "<group>"; };
+		A795851C2094D6ED00D9DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79584FF2094D6ED00D9DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79585132094D6ED00D9DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A79584F92094D6ED00D9DFC1 = {
+			isa = PBXGroup;
+			children = (
+				A79585042094D6ED00D9DFC1 /* MercadoPago Payment Example */,
+				A79585192094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests */,
+				A79585032094D6ED00D9DFC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79585032094D6ED00D9DFC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */,
+				A79585162094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79585042094D6ED00D9DFC1 /* MercadoPago Payment Example */ = {
+			isa = PBXGroup;
+			children = (
+				A79585052094D6ED00D9DFC1 /* AppDelegate.swift */,
+				A79585072094D6ED00D9DFC1 /* ViewController.swift */,
+				A79585092094D6ED00D9DFC1 /* Main.storyboard */,
+				A795850C2094D6ED00D9DFC1 /* Assets.xcassets */,
+				A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */,
+				A79585112094D6ED00D9DFC1 /* Info.plist */,
+			);
+			path = "MercadoPago Payment Example";
+			sourceTree = "<group>";
+		};
+		A79585192094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */,
+				A795851C2094D6ED00D9DFC1 /* Info.plist */,
+			);
+			path = "MercadoPago Payment ExampleTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79585012094D6ED00D9DFC1 /* MercadoPago Payment Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A795851F2094D6ED00D9DFC1 /* Build configuration list for PBXNativeTarget "MercadoPago Payment Example" */;
+			buildPhases = (
+				A79584FE2094D6ED00D9DFC1 /* Sources */,
+				A79584FF2094D6ED00D9DFC1 /* Frameworks */,
+				A79585002094D6ED00D9DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MercadoPago Payment Example";
+			productName = "MercadoPago Payment Example";
+			productReference = A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A79585152094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79585222094D6ED00D9DFC1 /* Build configuration list for PBXNativeTarget "MercadoPago Payment ExampleTests" */;
+			buildPhases = (
+				A79585122094D6ED00D9DFC1 /* Sources */,
+				A79585132094D6ED00D9DFC1 /* Frameworks */,
+				A79585142094D6ED00D9DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79585182094D6ED00D9DFC1 /* PBXTargetDependency */,
+			);
+			name = "MercadoPago Payment ExampleTests";
+			productName = "MercadoPago Payment ExampleTests";
+			productReference = A79585162094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79584FA2094D6ED00D9DFC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Diego López Bugna";
+				TargetAttributes = {
+					A79585012094D6ED00D9DFC1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A79585152094D6ED00D9DFC1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A79585012094D6ED00D9DFC1;
+					};
+				};
+			};
+			buildConfigurationList = A79584FD2094D6ED00D9DFC1 /* Build configuration list for PBXProject "MercadoPago Payment Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79584F92094D6ED00D9DFC1;
+			productRefGroup = A79585032094D6ED00D9DFC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79585012094D6ED00D9DFC1 /* MercadoPago Payment Example */,
+				A79585152094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79585002094D6ED00D9DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */,
+				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
+				A795850B2094D6ED00D9DFC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79585142094D6ED00D9DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79584FE2094D6ED00D9DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79585082094D6ED00D9DFC1 /* ViewController.swift in Sources */,
+				A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79585122094D6ED00D9DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A795851B2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A79585182094D6ED00D9DFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A79585012094D6ED00D9DFC1 /* MercadoPago Payment Example */;
+			targetProxy = A79585172094D6ED00D9DFC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A79585092094D6ED00D9DFC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A795850A2094D6ED00D9DFC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A795850F2094D6ED00D9DFC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A795851D2094D6ED00D9DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A795851E2094D6ED00D9DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79585202094D6ED00D9DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X32L2WT2YT;
+				INFOPLIST_FILE = "MercadoPago Payment Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DLB.MercadoPago-Payment-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79585212094D6ED00D9DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X32L2WT2YT;
+				INFOPLIST_FILE = "MercadoPago Payment Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DLB.MercadoPago-Payment-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A79585232094D6ED00D9DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X32L2WT2YT;
+				INFOPLIST_FILE = "MercadoPago Payment ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DLB.MercadoPago-Payment-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoPago Payment Example.app/MercadoPago Payment Example";
+			};
+			name = Debug;
+		};
+		A79585242094D6ED00D9DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X32L2WT2YT;
+				INFOPLIST_FILE = "MercadoPago Payment ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DLB.MercadoPago-Payment-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoPago Payment Example.app/MercadoPago Payment Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79584FD2094D6ED00D9DFC1 /* Build configuration list for PBXProject "MercadoPago Payment Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A795851D2094D6ED00D9DFC1 /* Debug */,
+				A795851E2094D6ED00D9DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A795851F2094D6ED00D9DFC1 /* Build configuration list for PBXNativeTarget "MercadoPago Payment Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79585202094D6ED00D9DFC1 /* Debug */,
+				A79585212094D6ED00D9DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79585222094D6ED00D9DFC1 /* Build configuration list for PBXNativeTarget "MercadoPago Payment ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79585232094D6ED00D9DFC1 /* Debug */,
+				A79585242094D6ED00D9DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79584FA2094D6ED00D9DFC1 /* Project object */;
+}
