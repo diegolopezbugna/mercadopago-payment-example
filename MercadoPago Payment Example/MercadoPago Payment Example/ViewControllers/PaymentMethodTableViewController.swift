@@ -11,6 +11,8 @@ import UIKit
 class PaymentMethodTableViewController: UITableViewController {
     
     var paymentMethods: [PaymentMethod]! = []
+    
+    let thumbTitleCellReuseIdentifier = "ThumbTitleCell"
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,9 @@ class PaymentMethodTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
-        self.tableView.register(UINib(nibName: "ThumbTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "ThumbTitleCell")
+        self.tableView.register(UINib(nibName: "ThumbTitleTableViewCell", bundle: nil), forCellReuseIdentifier: self.thumbTitleCellReuseIdentifier)
+        
+        self.title = "Payment Methods" // TODO: localization
         
         fillPaymentMethods()
     }
@@ -39,7 +43,7 @@ class PaymentMethodTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ThumbTitleCell", for: indexPath) as! ThumbTitleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.thumbTitleCellReuseIdentifier, for: indexPath) as! ThumbTitleTableViewCell
 
         cell.imageView?.image = nil
         cell.titleLabel.text = self.paymentMethods[indexPath.row].name
