@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A75F9B0420978F1E00FFE3F2 /* PaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0220978F1E00FFE3F2 /* PaymentMethodTableViewController.swift */; };
-		A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableViewController.xib */; };
+		A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */; };
 		A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */; };
 		A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */; };
 		A780E7952094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780E7932094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		A75F9B0220978F1E00FFE3F2 /* PaymentMethodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewController.swift; sourceTree = "<group>"; };
-		A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableViewController.xib; sourceTree = "<group>"; };
+		A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableView.xib; sourceTree = "<group>"; };
 		A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
 		A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodConnector.swift; sourceTree = "<group>"; };
 		A780E7932094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTitleTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		A79585252094DC1400D9DFC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableViewController.xib */,
+				A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */,
 				A79585282094DCC800D9DFC1 /* AmountView.xib */,
 			);
 			path = Views;
@@ -238,7 +238,7 @@
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
 				A79585292094DCC800D9DFC1 /* AmountView.xib in Resources */,
 				A780E7962094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib in Resources */,
-				A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableViewController.xib in Resources */,
+				A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
