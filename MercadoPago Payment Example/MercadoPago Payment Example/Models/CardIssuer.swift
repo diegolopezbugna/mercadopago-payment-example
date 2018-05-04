@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PaymentMethod : Codable {
+class CardIssuer : Codable {
     
     var id: String?
     var thumbnail: String?

@@ -15,6 +15,7 @@ class PayUseCase {
     
     var amount: Int?
     var paymentMethod: PaymentMethod?
+    var cardIssuer: CardIssuer?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -24,11 +25,6 @@ class PayUseCase {
         let amountVC = AmountViewController()
         amountVC.delegate = self
         self.navigationController.pushViewController(amountVC, animated: false)
-    }
-    
-    func didSelectPaymentMethod(_ paymentMethod: PaymentMethod) {
-        self.paymentMethod = paymentMethod
-        
     }
     
 }
@@ -46,6 +42,14 @@ extension PayUseCase: AmountViewControllerDelegate {
 extension PayUseCase: PaymentMethodViewControllerDelegate {
     func selectedPaymentMethod(_ paymentMethod: PaymentMethod) {
         self.paymentMethod = paymentMethod
-        
+        let cardIssuerVC = CardIssuerViewController(paymentMethod: paymentMethod)
+        cardIssuerVC.delegate = self
+        self.navigationController.pushViewController(cardIssuerVC, animated: true)
+    }
+}
+
+extension PayUseCase: CardIssuerViewControllerDelegate {
+    func selectedCardIssuer(_ cardIssuer: CardIssuer) {
+        self.cardIssuer = cardIssuer
     }
 }
