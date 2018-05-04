@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A75F9B0420978F1E00FFE3F2 /* PaymentMethodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0220978F1E00FFE3F2 /* PaymentMethodTableViewController.swift */; };
-		A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */; };
 		A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */; };
 		A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */; };
-		A780E7952094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780E7932094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift */; };
-		A780E7962094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A780E7942094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib */; };
 		A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585052094D6ED00D9DFC1 /* AppDelegate.swift */; };
 		A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795850C2094D6ED00D9DFC1 /* Assets.xcassets */; };
 		A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */; };
 		A795851B2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */; };
 		A79585292094DCC800D9DFC1 /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79585282094DCC800D9DFC1 /* AmountView.xib */; };
+		A7AA9A76209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */; };
+		A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */; };
+		A7AA9A79209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */; };
+		A7B66EEF209A64D80039DE06 /* PayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B66EEE209A64D80039DE06 /* PayUseCase.swift */; };
+		A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */; };
+		A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */; };
+		A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A75F9B0220978F1E00FFE3F2 /* PaymentMethodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewController.swift; sourceTree = "<group>"; };
-		A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableView.xib; sourceTree = "<group>"; };
 		A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
 		A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodConnector.swift; sourceTree = "<group>"; };
-		A780E7932094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTitleTableViewCell.swift; sourceTree = "<group>"; };
-		A780E7942094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbTitleTableViewCell.xib; sourceTree = "<group>"; };
 		A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MercadoPago Payment Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79585052094D6ED00D9DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A795850C2094D6ED00D9DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +45,13 @@
 		A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoPago_Payment_ExampleTests.swift; sourceTree = "<group>"; };
 		A795851C2094D6ED00D9DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A79585282094DCC800D9DFC1 /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
+		A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XColumnsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A7B66EEE209A64D80039DE06 /* PayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUseCase.swift; sourceTree = "<group>"; };
+		A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodView.xib; sourceTree = "<group>"; };
+		A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,9 @@
 		A780E7902094FACB00CFEFB3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A780E7932094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift */,
-				A780E7942094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib */,
+				A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */,
+				A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */,
+				A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 		A79585042094D6ED00D9DFC1 /* MercadoPago Payment Example */ = {
 			isa = PBXGroup;
 			children = (
+				A7B66EED209A64BC0039DE06 /* UseCases */,
 				A75F9B082097920B00FFE3F2 /* Connectors */,
 				A780E7902094FACB00CFEFB3 /* Cells */,
 				A79585272094DC2D00D9DFC1 /* ViewControllers */,
@@ -129,7 +137,7 @@
 		A79585252094DC1400D9DFC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A75F9B0320978F1E00FFE3F2 /* PaymentMethodTableView.xib */,
+				A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */,
 				A79585282094DCC800D9DFC1 /* AmountView.xib */,
 			);
 			path = Views;
@@ -146,9 +154,18 @@
 		A79585272094DC2D00D9DFC1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A75F9B0220978F1E00FFE3F2 /* PaymentMethodTableViewController.swift */,
+				A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */,
+				A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7B66EED209A64BC0039DE06 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A7B66EEE209A64D80039DE06 /* PayUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */,
+				A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */,
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
+				A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */,
 				A79585292094DCC800D9DFC1 /* AmountView.xib in Resources */,
-				A780E7962094FB5C00CFEFB3 /* ThumbTitleTableViewCell.xib in Resources */,
-				A75F9B0520978F1E00FFE3F2 /* PaymentMethodTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A780E7952094FB5C00CFEFB3 /* ThumbTitleTableViewCell.swift in Sources */,
+				A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */,
 				A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */,
 				A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */,
-				A75F9B0420978F1E00FFE3F2 /* PaymentMethodTableViewController.swift in Sources */,
+				A7AA9A79209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift in Sources */,
+				A7B66EEF209A64D80039DE06 /* PayUseCase.swift in Sources */,
+				A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */,
 				A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */,
+				A7AA9A76209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

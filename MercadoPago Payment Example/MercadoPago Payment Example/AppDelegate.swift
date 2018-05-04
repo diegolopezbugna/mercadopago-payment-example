@@ -12,15 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var payUseCase: PayUseCase?
     let mercadoPagoPrimaryColor: UIColor = UIColor(red: 74/255, green: 185/255, blue: 233/255, alpha: 255/255) // "4AB9E9"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let mainVC = PaymentMethodTableViewController()
-        let navigationController = UINavigationController(rootViewController: mainVC)
-
+        let navigationController = UINavigationController()
+        setupNavigationBar(navigationBar: navigationController.navigationBar)
+        
+        self.payUseCase = PayUseCase(navigationController: navigationController)
+        self.payUseCase?.start()
+        
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
