@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; placeholder = "Amount SI"; ObjectID = "OmN-oa-E59"; */
+"OmN-oa-E59.placeholder" = "Monto";
+
+/* Class = "UILabel"; text = "How much do you want to pay? SI"; ObjectID = "geY-Ms-JW8"; */
+"geY-Ms-JW8.text" = "¿Cuánto quieres pagar?";
+
+/* Class = "UIButton"; normalTitle = "Continue SI"; ObjectID = "yKi-61-jZW"; */
+"yKi-61-jZW.normalTitle" = "Continuar";
