@@ -1,5 +1,5 @@
 //
-//  CardIssuerViewController.swift
+//  InstallmentViewController.swift
 //  MercadoPago Payment Example
 //
 //  Created by Diego López Bugna on 02/05/2018.
@@ -8,24 +8,30 @@
 
 import UIKit
 
-protocol CardIssuerViewControllerDelegate: class {
-    func selectedCardIssuer(_ cardIssuer: CardIssuer)
+protocol InstallmentViewControllerDelegate: class {
+    func selectedInstallment(_ installment: Installment)
 }
 
-class CardIssuerViewController: UIViewController {
+class InstallmentViewController: UIViewController {
 
+    // TODO: make baseViewController & CollectionViewController
+    
     @IBOutlet weak var collectionView: UICollectionView!
 
-    var cardIssuers: [CardIssuer]! = []
-    var paymentMethod: PaymentMethod?
+    var installments: [Installment]! = []
+    var paymentMethod: PaymentMethod!
+    var amount: Int!
+    var cardIssuer: CardIssuer!
 
     let thumbTitleCellReuseIdentifier = "ThumbTitleCell"
     let thumbTitleCellNibName = "ThumbTitleCollectionViewCell"
 
-    weak var delegate: CardIssuerViewControllerDelegate?
+    weak var delegate: InstallmentViewControllerDelegate?
 
-    init(paymentMethod: PaymentMethod) {
+    init(paymentMethod: PaymentMethod, amount: Int, cardIssuer: CardIssuer) {
         self.paymentMethod = paymentMethod
+        self.amount = amount
+        self.cardIssuer = cardIssuer
         super.init(nibName: "PaymentMethodView", bundle: nil)
     }
     
@@ -42,10 +48,10 @@ class CardIssuerViewController: UIViewController {
         
         self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
         
-        self.title = "Card Issuer" // TODO: localization
+        self.title = "Installments" // TODO: localization
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-        fillCardIssuers()
+        fillInstallments()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,66 +59,43 @@ class CardIssuerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func fillCardIssuers() {
-        guard let paymentMethod = paymentMethod else { return }
+    func fillInstallments() {
+        guard let paymentMethod = paymentMethod, let amount = amount, let cardIssuer = cardIssuer else { return } // TODO: optionals?
         
-        let connector = CardIssuerConnector()
-        connector.getCardIssuers(paymentMethod: paymentMethod) { (cardIssuers) in
-            guard let cardIssuers = cardIssuers else {
+        let connector = InstallmentConnector()
+        connector.getInstallments(paymentMethod: paymentMethod, amount: amount, cardIssuer: cardIssuer) { (installments) in
+            guard let installments = installments else {
                 // TODO: error/exception
                 return
             }
-            self.cardIssuers = cardIssuers
+            self.installments = installments
             DispatchQueue.main.async {
                 self.collectionView?.reloadData()
-                self.fillCardIssuersThumbnails()
-            }
-        }
-    }
-    
-    func fillCardIssuersThumbnails() {
-        guard let cardIssuers = cardIssuers, self.cardIssuers.count > 0 else {
-            return
-        }
-        
-        for index in 0...(cardIssuers.count - 1) {
-            DispatchQueue.global().async { [weak self] in
-                let url = URL(string: cardIssuers[index].thumbnail!)
-                if let data = try? Data(contentsOf: url!) {
-                    cardIssuers[index].thumbnailData = data
-                    DispatchQueue.main.async {
-                        self?.collectionView?.reloadItems(at: [IndexPath(row: index, section: 0)])
-                    }
-                }
             }
         }
     }
 }
 
-extension CardIssuerViewController: UICollectionViewDelegate {
+extension InstallmentViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let itemSelected = self.cardIssuers[indexPath.row]
-        self.delegate?.selectedCardIssuer(itemSelected)
+        let itemSelected = self.installments[indexPath.row]
+        self.delegate?.selectedInstallment(itemSelected)
     }
     
 }
 
-extension CardIssuerViewController: UICollectionViewDataSource {
+extension InstallmentViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.cardIssuers.count
+        return self.installments.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.thumbTitleCellReuseIdentifier, for: indexPath) as! ThumbTitleCollectionViewCell
         
-        if let thumbData = self.cardIssuers[indexPath.row].thumbnailData {
-            cell.thumbImageView?.image = UIImage(data: thumbData)
-        } else {
-            cell.thumbImageView?.image = nil
-        }
-        cell.titleLabel.text = self.cardIssuers[indexPath.row].name
+        cell.thumbImageView?.image = nil // TODO: different cell
+        cell.titleLabel.text = self.installments[indexPath.row].recommendedMessage
         
         return cell
     }

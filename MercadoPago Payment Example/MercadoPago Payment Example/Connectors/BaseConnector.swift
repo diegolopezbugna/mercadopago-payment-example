@@ -36,8 +36,8 @@ class BaseConnector {
             }
             
             let decoder = JSONDecoder()
-            let decodable = try? decoder.decode(T.self, from: data)
-            
+            let decodable = try! decoder.decode(T.self, from: data) // TODO: try? ERRORS!
+            print("decoded: ", decodable)
             completion(decodable)
         }
         task.resume()

@@ -51,5 +51,17 @@ extension PayUseCase: PaymentMethodViewControllerDelegate {
 extension PayUseCase: CardIssuerViewControllerDelegate {
     func selectedCardIssuer(_ cardIssuer: CardIssuer) {
         self.cardIssuer = cardIssuer
+        guard let paymentMethod = self.paymentMethod, let amount = self.amount else { return }
+        let installmentVC = InstallmentViewController(paymentMethod: paymentMethod, amount: amount, cardIssuer: cardIssuer)
+        installmentVC.delegate = self
+        self.navigationController.pushViewController(installmentVC, animated: true)
+    }
+}
+
+extension PayUseCase: InstallmentViewControllerDelegate {
+    func selectedInstallment(_ installment: Installment) {
+        self.navigationController.popToRootViewController(animated: true)
+        let message = "\(amount != nil ? String(amount!) : "")\n\(paymentMethod?.id ?? "")\n\(cardIssuer?.id ?? "")\n\(installment.recommendedMessage ?? "")"
+        self.navigationController.viewControllers[0].showAlert(title: "", message: message, buttonPressed: {})
     }
 }
