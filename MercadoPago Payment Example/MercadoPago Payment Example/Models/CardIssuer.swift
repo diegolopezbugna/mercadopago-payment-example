@@ -1,5 +1,5 @@
 //
-//  PaymentMethod.swift
+//  CardIssuer.swift
 //  MercadoPago Payment Example
 //
 //  Created by Diego López Bugna on 30/04/2018.
