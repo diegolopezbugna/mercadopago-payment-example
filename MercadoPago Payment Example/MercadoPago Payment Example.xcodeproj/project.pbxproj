@@ -21,6 +21,7 @@
 		A7AA9A76209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */; };
 		A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */; };
 		A7AA9A79209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */; };
+		A7ABA7AD209DF2BC00BC7489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ABA7AC209DF2BC00BC7489 /* ViewController.swift */; };
 		A7B66EEF209A64D80039DE06 /* PayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B66EEE209A64D80039DE06 /* PayUseCase.swift */; };
 		A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */; };
 		A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */; };
@@ -56,6 +57,7 @@
 		A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbTitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XColumnsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A7ABA7AC209DF2BC00BC7489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7B66EEE209A64D80039DE06 /* PayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUseCase.swift; sourceTree = "<group>"; };
 		A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
 		A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodView.xib; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		A79585042094D6ED00D9DFC1 /* MercadoPago Payment Example */ = {
 			isa = PBXGroup;
 			children = (
+				A7ABA7AB209DF29300BC7489 /* Extensions */,
 				A7B66EED209A64BC0039DE06 /* UseCases */,
 				A75F9B082097920B00FFE3F2 /* Connectors */,
 				A780E7902094FACB00CFEFB3 /* Cells */,
@@ -170,6 +173,14 @@
 				A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7ABA7AB209DF29300BC7489 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7ABA7AC209DF2BC00BC7489 /* ViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A7B66EED209A64BC0039DE06 /* UseCases */ = {
@@ -296,6 +307,7 @@
 				A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */,
 				A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */,
 				A7192658209CC6440009AC96 /* CardIssuer.swift in Sources */,
+				A7ABA7AD209DF2BC00BC7489 /* ViewController.swift in Sources */,
 				A7AA9A76209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
