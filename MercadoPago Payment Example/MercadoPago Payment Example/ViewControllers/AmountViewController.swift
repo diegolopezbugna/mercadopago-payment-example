@@ -39,7 +39,7 @@ class AmountViewController: UIViewController {
         
         self.defaultButtonBottomConstraintConstant = buttonBottomConstraint.constant
         
-        self.title = "Amount"  // TODO: localization
+        self.title = NSLocalizedString("amountTitle", comment: "")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 

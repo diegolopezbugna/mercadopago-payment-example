@@ -48,7 +48,7 @@ class InstallmentViewController: UIViewController {
         
         self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
         
-        self.title = "Installments" // TODO: localization
+        self.title = NSLocalizedString("installmentTitle", comment: "")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         fillInstallments()

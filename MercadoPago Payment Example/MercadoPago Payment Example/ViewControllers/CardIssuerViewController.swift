@@ -42,7 +42,7 @@ class CardIssuerViewController: UIViewController {
         
         self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
         
-        self.title = "Card Issuer" // TODO: localization
+        self.title = NSLocalizedString("cardIssuerTitle", comment: "")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         fillCardIssuers()

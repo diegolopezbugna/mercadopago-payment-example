@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  MercadoPago Payment Example
+
+  Created by Diego López Bugna on 05/05/2018.
+  Copyright © 2018 Diego López Bugna. All rights reserved.
+*/
+
+"amountTitle" = "Monto";
+"paymentMethodTitle" = "Selecciona un método de pago";
+"cardIssuerTitle" = "Selecciona el emisor";
+"installmentTitle" = "Selecciona la cantidad de cuotas";
+"errorTitle" = "ERROR";
+"errorMessage" = "Por favor intente nuevamente";
+"tryAgain" = "Reintentar";
+"ok" = "OK";

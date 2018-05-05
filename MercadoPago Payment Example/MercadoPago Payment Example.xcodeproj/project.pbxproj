@@ -11,6 +11,7 @@
 		A7192658209CC6440009AC96 /* CardIssuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7192657209CC6440009AC96 /* CardIssuer.swift */; };
 		A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */; };
 		A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */; };
+		A77B22DD209E081E00D24C38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A77B22DF209E081E00D24C38 /* Localizable.strings */; };
 		A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79585052094D6ED00D9DFC1 /* AppDelegate.swift */; };
 		A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795850C2094D6ED00D9DFC1 /* Assets.xcassets */; };
 		A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */; };
@@ -46,6 +47,8 @@
 		A7192657209CC6440009AC96 /* CardIssuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardIssuer.swift; sourceTree = "<group>"; };
 		A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
 		A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodConnector.swift; sourceTree = "<group>"; };
+		A77B22DE209E081E00D24C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A77B22E0209E085200D24C38 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A79585022094D6ED00D9DFC1 /* MercadoPago Payment Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MercadoPago Payment Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79585052094D6ED00D9DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A795850C2094D6ED00D9DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 				A795850C2094D6ED00D9DFC1 /* Assets.xcassets */,
 				A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */,
 				A79585112094D6ED00D9DFC1 /* Info.plist */,
+				A77B22DF209E081E00D24C38 /* Localizable.strings */,
 			);
 			path = "MercadoPago Payment Example";
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = A79584F92094D6ED00D9DFC1;
 			productRefGroup = A79585032094D6ED00D9DFC1 /* Products */;
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */,
+				A77B22DD209E081E00D24C38 /* Localizable.strings in Resources */,
 				A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */,
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
 				A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */,
@@ -343,6 +349,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A77B22DF209E081E00D24C38 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77B22DE209E081E00D24C38 /* en */,
+				A77B22E0209E085200D24C38 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -415,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -40,7 +40,7 @@ class PaymentMethodViewController: UIViewController {
         
         self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
         
-        self.title = "Payment Methods" // TODO: localization
+        self.title = NSLocalizedString("paymentMethodTitle", comment: "")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         fillPaymentMethods()
