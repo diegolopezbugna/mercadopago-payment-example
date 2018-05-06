@@ -8,11 +8,13 @@
 
 import Foundation
 
-class PaymentMethod : Codable {
+class PaymentMethod : Codable, CustomStringConvertible {
     
     var id: String?
     var thumbnail: String?
     var thumbnailData: Data?
     var name: String?
+    
+    var description: String { return "{ PaymentMethod: id:\(id ?? "") }" }
     
 }

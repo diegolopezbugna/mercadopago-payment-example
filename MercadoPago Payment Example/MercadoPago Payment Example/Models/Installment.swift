@@ -8,12 +8,14 @@
 
 import Foundation
 
-class Installment {
+class Installment: Codable, CustomStringConvertible {
     
     var recommendedMessage: String?
     
     init(recommendedMessage: String?) {
         self.recommendedMessage = recommendedMessage
     }
+    
+    var description: String { return "{ Installment: \(recommendedMessage ?? "") }" }
     
 }

@@ -8,11 +8,13 @@
 
 import Foundation
 
-class CardIssuer : Codable {
+class CardIssuer : Codable, CustomStringConvertible {
     
     var id: String?
     var thumbnail: String?
     var thumbnailData: Data?
     var name: String?
     
+    var description: String { return "{ CardIssuer: id:\(id ?? "") }" }
+
 }
