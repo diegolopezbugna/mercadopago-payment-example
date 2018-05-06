@@ -24,7 +24,7 @@ class PaymentMethodViewController: UIViewController {
     weak var delegate: PaymentMethodViewControllerDelegate?
 
     init(amount: Int?) {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "FingerSizeCollectionView", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

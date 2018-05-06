@@ -23,8 +23,8 @@ class InstallmentViewController: UIViewController {
     var amount: Int!
     var cardIssuer: CardIssuer!
 
-    let thumbTitleCellReuseIdentifier = "ThumbTitleCell"
-    let thumbTitleCellNibName = "ThumbTitleCollectionViewCell"
+    let cellReuseIdentifier = "TitleCell"
+    let cellNibName = "TitleCollectionViewCell"
 
     weak var delegate: InstallmentViewControllerDelegate?
 
@@ -32,7 +32,7 @@ class InstallmentViewController: UIViewController {
         self.paymentMethod = paymentMethod
         self.amount = amount
         self.cardIssuer = cardIssuer
-        super.init(nibName: "PaymentMethodView", bundle: nil)
+        super.init(nibName: "FingerSizeCollectionView", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -44,9 +44,9 @@ class InstallmentViewController: UIViewController {
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        //self.collectionView.collectionViewLayout = XColumnsCollectionViewFlowLayout(numberOfColumns: 3)
+        //self.collectionView.collectionViewLayout = XColumnsCollectionViewFlowLayout(numberOfColumns: 1)
         
-        self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
+        self.collectionView.register(UINib(nibName: self.cellNibName, bundle: nil), forCellWithReuseIdentifier: self.cellReuseIdentifier)
         
         self.title = NSLocalizedString("installmentTitle", comment: "")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
@@ -92,9 +92,8 @@ extension InstallmentViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.thumbTitleCellReuseIdentifier, for: indexPath) as! ThumbTitleCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellReuseIdentifier, for: indexPath) as! TitleCollectionViewCell
         
-        cell.thumbImageView?.image = nil // TODO: different cell
         cell.titleLabel.text = self.installments[indexPath.row].recommendedMessage
         
         return cell

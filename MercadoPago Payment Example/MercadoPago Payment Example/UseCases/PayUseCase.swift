@@ -31,7 +31,7 @@ class PayUseCase {
 
 extension PayUseCase: AmountViewControllerDelegate {
     func continueButtonPressed(amount: Int?) {
-        // TODO: validations
+        // TODO: validations, change Amount to double?
         self.amount = amount
         let paymentMethodVC = PaymentMethodViewController(amount: amount)
         paymentMethodVC.delegate = self

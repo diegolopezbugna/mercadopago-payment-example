@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70FBDB6209F47A400B04ABE /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FBDB4209F47A400B04ABE /* TitleCollectionViewCell.swift */; };
+		A70FBDB7209F47A400B04ABE /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70FBDB5209F47A400B04ABE /* TitleCollectionViewCell.xib */; };
 		A7192656209CC61D0009AC96 /* CardIssuerConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7192655209CC61D0009AC96 /* CardIssuerConnector.swift */; };
 		A7192658209CC6440009AC96 /* CardIssuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7192657209CC6440009AC96 /* CardIssuer.swift */; };
 		A75F9B0720978FC000FFE3F2 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */; };
@@ -27,7 +29,7 @@
 		A7ABA7AD209DF2BC00BC7489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ABA7AC209DF2BC00BC7489 /* ViewController.swift */; };
 		A7B66EEF209A64D80039DE06 /* PayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B66EEE209A64D80039DE06 /* PayUseCase.swift */; };
 		A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */; };
-		A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */; };
+		A7C2F83D2099FE4900B2483A /* FingerSizeCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */; };
 		A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */; };
 		A7FB7277209DD75F007A9154 /* InstallmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70FBDB4209F47A400B04ABE /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A70FBDB5209F47A400B04ABE /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		A7192655209CC61D0009AC96 /* CardIssuerConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardIssuerConnector.swift; sourceTree = "<group>"; };
 		A7192657209CC6440009AC96 /* CardIssuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardIssuer.swift; sourceTree = "<group>"; };
 		A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		A7ABA7AC209DF2BC00BC7489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7B66EEE209A64D80039DE06 /* PayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUseCase.swift; sourceTree = "<group>"; };
 		A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
-		A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodView.xib; sourceTree = "<group>"; };
+		A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FingerSizeCollectionView.xib; sourceTree = "<group>"; };
 		A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
 		A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,8 @@
 		A780E7902094FACB00CFEFB3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A70FBDB4209F47A400B04ABE /* TitleCollectionViewCell.swift */,
+				A70FBDB5209F47A400B04ABE /* TitleCollectionViewCell.xib */,
 				A7AA9A74209A07E40043DAEA /* ThumbTitleCollectionViewCell.swift */,
 				A7AA9A75209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib */,
 				A7AA9A78209A12130043DAEA /* XColumnsCollectionViewFlowLayout.swift */,
@@ -163,8 +169,8 @@
 		A79585252094DC1400D9DFC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7C2F83B2099FE4900B2483A /* PaymentMethodView.xib */,
 				A77B22E3209E0B3B00D24C38 /* AmountView.xib */,
+				A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,7 +300,8 @@
 				A77B22DD209E081E00D24C38 /* Localizable.strings in Resources */,
 				A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */,
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
-				A7C2F83D2099FE4900B2483A /* PaymentMethodView.xib in Resources */,
+				A7C2F83D2099FE4900B2483A /* FingerSizeCollectionView.xib in Resources */,
+				A70FBDB7209F47A400B04ABE /* TitleCollectionViewCell.xib in Resources */,
 				A77B22E1209E0B3B00D24C38 /* AmountView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +324,7 @@
 				A7A017E2209D1F2A00DB454E /* Installment.swift in Sources */,
 				A7A017E0209D1ECB00DB454E /* InstallmentConnector.swift in Sources */,
 				A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */,
+				A70FBDB6209F47A400B04ABE /* TitleCollectionViewCell.swift in Sources */,
 				A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */,
 				A7192656209CC61D0009AC96 /* CardIssuerConnector.swift in Sources */,
 				A7FB7277209DD75F007A9154 /* InstallmentViewController.swift in Sources */,

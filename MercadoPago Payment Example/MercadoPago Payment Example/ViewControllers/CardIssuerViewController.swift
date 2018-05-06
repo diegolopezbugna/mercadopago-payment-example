@@ -26,7 +26,7 @@ class CardIssuerViewController: UIViewController {
 
     init(paymentMethod: PaymentMethod) {
         self.paymentMethod = paymentMethod
-        super.init(nibName: "PaymentMethodView", bundle: nil)
+        super.init(nibName: "FingerSizeCollectionView", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
