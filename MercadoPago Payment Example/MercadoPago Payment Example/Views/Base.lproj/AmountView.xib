@@ -41,10 +41,10 @@
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKi-61-jZW" userLabel="ContinueButton">
-                    <rect key="frame" x="16" y="617" width="343" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKi-61-jZW" userLabel="ContinueButton" customClass="RoundedButton" customModule="MercadoPago_Payment_Example" customModuleProvider="target">
+                    <rect key="frame" x="16" y="607" width="343" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="6ak-yt-YwL"/>
+                        <constraint firstAttribute="height" constant="40" id="6ak-yt-YwL"/>
                     </constraints>
                     <state key="normal" title="Continue SI"/>
                     <connections>

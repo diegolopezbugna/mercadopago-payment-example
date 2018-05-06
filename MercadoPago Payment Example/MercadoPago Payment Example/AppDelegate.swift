@@ -11,9 +11,10 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    static let mercadoPagoPrimaryColor: UIColor = UIColor(red: 74/255, green: 185/255, blue: 233/255, alpha: 255/255) // "4AB9E9"
+
     var window: UIWindow?
     var payUseCase: PayUseCase?
-    let mercadoPagoPrimaryColor: UIColor = UIColor(red: 74/255, green: 185/255, blue: 233/255, alpha: 255/255) // "4AB9E9"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -28,12 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
+        UIButton.appearance().backgroundColor = AppDelegate.mercadoPagoPrimaryColor
+        UIButton.appearance().tintColor = UIColor.white
+        
         return true
     }
 
     func setupNavigationBar(navigationBar: UINavigationBar) {
         navigationBar.isTranslucent = false
-        navigationBar.barTintColor = mercadoPagoPrimaryColor
+        navigationBar.barTintColor = AppDelegate.mercadoPagoPrimaryColor
         navigationBar.tintColor = UIColor.white
         navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
