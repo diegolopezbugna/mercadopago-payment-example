@@ -17,15 +17,15 @@ protocol InstallmentConnectorProtocol {
 
 class InstallmentConnector : BaseConnector, InstallmentConnectorProtocol {
     
-    let getInstallmentsUrl: String = "https://api.mercadopago.com/v1/payment_methods/installments?public_key=%@&payment_method_id=%@&amount=%@&issuer.id=%@"
-    
     func getInstallments(paymentMethod: PaymentMethod,
                         amount: Int,
                         cardIssuer: CardIssuer,
                         completion: @escaping ([Installment]?) -> ()) {
         
-        let urlString = String(format: getInstallmentsUrl, self.publicKey,
-                               paymentMethod.id ?? "", String(amount), cardIssuer.id ?? "")
+        let uri = "payment_methods/installments"
+        let queryItems = [URLQueryItem(name: "payment_method_id", value: paymentMethod.id),
+                          URLQueryItem(name: "amount", value: String(amount)),
+                          URLQueryItem(name: "issuer.id", value: cardIssuer.id)]
         
         let apiCompletion = { (apiInstallments: [ApiInstallment]?) -> () in
             let installments = apiInstallments?[0].payer_costs?.map({ (apiPayerCost) -> Installment in
@@ -33,7 +33,7 @@ class InstallmentConnector : BaseConnector, InstallmentConnectorProtocol {
             })
             completion(installments)
         }
-        self.requestDecodable(urlString: urlString, completion: apiCompletion)
+        self.requestDecodable(uri: uri, queryItems: queryItems, completion: apiCompletion)
     }
 }
 

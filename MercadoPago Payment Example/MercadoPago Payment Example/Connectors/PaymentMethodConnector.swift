@@ -14,11 +14,9 @@ protocol PaymentMethodConnectorProtocol {
 
 class PaymentMethodConnector : BaseConnector, PaymentMethodConnectorProtocol {
     
-    let getPaymentMethodsUrl: String = "https://api.mercadopago.com/v1/payment_methods?public_key=%@"
-    
     func getPaymentMethods(completion: @escaping ([PaymentMethod]?) -> ()) {
-        let urlString = String(format: getPaymentMethodsUrl, self.publicKey)
-        self.requestDecodable(urlString: urlString, completion: completion)
+        let uri = "payment_methods"
+        self.requestDecodable(uri: uri, completion: completion)
     }
     
 }
