@@ -34,5 +34,9 @@ extension UIViewController {
         }))
         self.present(alert, animated: true)
     }
+    
+    func showGlobalError() {
+        showGlobalError(buttonPressed: { })
+    }
 
 }
