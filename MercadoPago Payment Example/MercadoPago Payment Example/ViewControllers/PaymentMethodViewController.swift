@@ -12,45 +12,21 @@ protocol PaymentMethodViewControllerDelegate: class {
     func selectedPaymentMethod(_ paymentMethod: PaymentMethod)
 }
 
-class PaymentMethodViewController: UIViewController {
+extension PaymentMethod: ThumbTitleItem {
+    var title: String? { return name }
+}
 
-    @IBOutlet weak var collectionView: UICollectionView!
-
-    var paymentMethods: [PaymentMethod]! = []
-
-    let thumbTitleCellReuseIdentifier = "ThumbTitleCell"
-    let thumbTitleCellNibName = "ThumbTitleCollectionViewCell"
+class PaymentMethodViewController: BaseThumbTitleCollectionViewController {
 
     weak var delegate: PaymentMethodViewControllerDelegate?
 
-    init(amount: Int?) {
-        super.init(nibName: "FingerSizeCollectionView", bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-        //self.collectionView.collectionViewLayout = XColumnsCollectionViewFlowLayout(numberOfColumns: 3)
-        
-        self.collectionView.register(UINib(nibName: self.thumbTitleCellNibName, bundle: nil), forCellWithReuseIdentifier: self.thumbTitleCellReuseIdentifier)
-        
+        self.collectionView.delegate = self // dataSource delegate is assigned on base
         self.title = NSLocalizedString("paymentMethodTitle", comment: "")
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        
         fillPaymentMethods()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func fillPaymentMethods() {
         let connector = PaymentMethodConnector()
         connector.getPaymentMethods { (paymentMethods) in
@@ -60,59 +36,19 @@ class PaymentMethodViewController: UIViewController {
                 }
                 return
             }
-            self.paymentMethods = paymentMethods
-            DispatchQueue.main.async {
-                self.collectionView?.reloadData()
-                self.fillPaymentMethodsThumbnails()
-            }
+            self.items = paymentMethods
+            self.fillItems()
         }
     }
     
-    func fillPaymentMethodsThumbnails() {
-        guard let paymentMethods = paymentMethods, self.paymentMethods.count > 0 else {
-            return
-        }
-        
-        for index in 0...(paymentMethods.count - 1) {
-            DispatchQueue.global().async { [weak self] in
-                let url = URL(string: paymentMethods[index].thumbnail!)
-                if let data = try? Data(contentsOf: url!) {
-                    paymentMethods[index].thumbnailData = data
-                    DispatchQueue.main.async {
-                        self?.collectionView?.reloadItems(at: [IndexPath(row: index, section: 0)])
-                    }
-                }
-            }
-        }
-    }
 }
 
 extension PaymentMethodViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let itemSelected = self.paymentMethods[indexPath.row]
-        self.delegate?.selectedPaymentMethod(itemSelected)
+        let itemSelected = self.items[indexPath.row]
+        self.delegate?.selectedPaymentMethod(itemSelected as! PaymentMethod)
     }
     
 }
 
-extension PaymentMethodViewController: UICollectionViewDataSource {
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.paymentMethods.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.thumbTitleCellReuseIdentifier, for: indexPath) as! ThumbTitleCollectionViewCell
-        
-        if let thumbData = self.paymentMethods[indexPath.row].thumbnailData {
-            cell.thumbImageView?.image = UIImage(data: thumbData)
-        } else {
-            cell.thumbImageView?.image = nil
-        }
-        cell.titleLabel.text = self.paymentMethods[indexPath.row].name
-        
-        return cell
-    }
-    
-}

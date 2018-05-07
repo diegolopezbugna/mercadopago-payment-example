@@ -33,6 +33,7 @@
 		A7C2F83D2099FE4900B2483A /* FingerSizeCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */; };
 		A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */; };
 		A7EF9CBB20A0B13A00A71950 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7EF9CBA20A0B13A00A71950 /* Settings.plist */; };
+		A7EF9CBD20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF9CBC20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift */; };
 		A7FB7277209DD75F007A9154 /* InstallmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FingerSizeCollectionView.xib; sourceTree = "<group>"; };
 		A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
 		A7EF9CBA20A0B13A00A71950 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		A7EF9CBC20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseThumbTitleCollectionViewController.swift; sourceTree = "<group>"; };
 		A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 		A79585272094DC2D00D9DFC1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A7EF9CBC20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift */,
 				A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */,
 				A7A017DB209D048C00DB454E /* CardIssuerViewController.swift */,
 				A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */,
@@ -339,6 +342,7 @@
 				A7A017E2209D1F2A00DB454E /* Installment.swift in Sources */,
 				A7A017E0209D1ECB00DB454E /* InstallmentConnector.swift in Sources */,
 				A79585062094D6ED00D9DFC1 /* AppDelegate.swift in Sources */,
+				A7EF9CBD20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift in Sources */,
 				A70FBDB6209F47A400B04ABE /* TitleCollectionViewCell.swift in Sources */,
 				A75F9B0A2097923200FFE3F2 /* PaymentMethodConnector.swift in Sources */,
 				A7192656209CC61D0009AC96 /* CardIssuerConnector.swift in Sources */,

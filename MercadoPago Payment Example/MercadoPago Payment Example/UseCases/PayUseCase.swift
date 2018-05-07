@@ -33,7 +33,7 @@ extension PayUseCase: AmountViewControllerDelegate {
     func continueButtonPressed(amount: Int?) {
         // TODO: validations, change Amount to double?
         self.amount = amount
-        let paymentMethodVC = PaymentMethodViewController(amount: amount)
+        let paymentMethodVC = PaymentMethodViewController()
         paymentMethodVC.delegate = self
         self.navigationController.pushViewController(paymentMethodVC, animated: true)
     }

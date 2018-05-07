@@ -14,7 +14,7 @@ protocol InstallmentViewControllerDelegate: class {
 
 class InstallmentViewController: UIViewController {
 
-    // TODO: make baseViewController & CollectionViewController
+    // TODO: make BaseTitleCollectionViewController
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -60,8 +60,6 @@ class InstallmentViewController: UIViewController {
     }
     
     func fillInstallments() {
-        guard let paymentMethod = paymentMethod, let amount = amount, let cardIssuer = cardIssuer else { return } // TODO: optionals?
-        
         let connector = InstallmentConnector()
         connector.getInstallments(paymentMethod: paymentMethod, amount: amount, cardIssuer: cardIssuer) { (installments) in
             guard let installments = installments else {
