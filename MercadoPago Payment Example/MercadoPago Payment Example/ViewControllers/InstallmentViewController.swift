@@ -65,7 +65,9 @@ class InstallmentViewController: UIViewController {
         let connector = InstallmentConnector()
         connector.getInstallments(paymentMethod: paymentMethod, amount: amount, cardIssuer: cardIssuer) { (installments) in
             guard let installments = installments else {
-                // TODO: error/exception
+                self.showGlobalError {
+                    self.fillInstallments()
+                }
                 return
             }
             self.installments = installments

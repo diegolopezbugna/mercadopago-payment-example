@@ -59,7 +59,9 @@ class CardIssuerViewController: UIViewController {
         let connector = CardIssuerConnector()
         connector.getCardIssuers(paymentMethod: paymentMethod) { (cardIssuers) in
             guard let cardIssuers = cardIssuers else {
-                // TODO: error/exception
+                self.showGlobalError {
+                    self.fillCardIssuers()
+                }
                 return
             }
             self.cardIssuers = cardIssuers

@@ -55,7 +55,9 @@ class PaymentMethodViewController: UIViewController {
         let connector = PaymentMethodConnector()
         connector.getPaymentMethods { (paymentMethods) in
             guard let paymentMethods = paymentMethods else {
-                // TODO: error/exception
+                self.showGlobalError {
+                    self.fillPaymentMethods()
+                }
                 return
             }
             self.paymentMethods = paymentMethods
