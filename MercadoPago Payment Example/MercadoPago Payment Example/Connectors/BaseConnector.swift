@@ -32,6 +32,8 @@ class BaseConnector {
             } else {
                 NSLog("Can't read publicKey from settings")
             }
+        } else {
+            NSLog("Can't read Settings.plist")
         }
     }
 
