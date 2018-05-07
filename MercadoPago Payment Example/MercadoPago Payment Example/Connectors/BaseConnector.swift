@@ -10,8 +10,30 @@ import Foundation
 
 class BaseConnector {
 
-    let baseUrl = URL(string: "https://api.mercadopago.com/v1/") // TODO: move to .plist
-    let publicKey = "444a9ef5-8a6b-429f-abdf-587639155d88" // TODO: move to .plist
+    var baseUrl: URL?
+    var publicKey: String?
+
+    init() {
+        setupFromSettings()
+    }
+    
+    func setupFromSettings() {
+        if let path = Bundle.main.path(forResource: "Settings", ofType: "plist"),
+            let settings = NSDictionary(contentsOfFile: path) {
+            
+            if let baseUrlString = settings["baseUrl"] as? String {
+                self.baseUrl = URL(string: baseUrlString)
+            } else {
+                NSLog("Can't read baseUrl from settings")
+            }
+            
+            if let publicKey = settings["publicKey"] as? String {
+                self.publicKey = publicKey
+            } else {
+                NSLog("Can't read publicKey from settings")
+            }
+        }
+    }
 
     func requestDecodable<T: Decodable>(uri: String, queryItems: [URLQueryItem], completion: @escaping (T?) -> ()) {
 

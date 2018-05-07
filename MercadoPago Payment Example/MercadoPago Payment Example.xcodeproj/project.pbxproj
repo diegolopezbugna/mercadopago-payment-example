@@ -32,6 +32,7 @@
 		A7C2F83C2099FE4900B2483A /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */; };
 		A7C2F83D2099FE4900B2483A /* FingerSizeCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */; };
 		A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */; };
+		A7EF9CBB20A0B13A00A71950 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7EF9CBA20A0B13A00A71950 /* Settings.plist */; };
 		A7FB7277209DD75F007A9154 /* InstallmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		A7C2F83A2099FE4900B2483A /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
 		A7C2F83B2099FE4900B2483A /* FingerSizeCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FingerSizeCollectionView.xib; sourceTree = "<group>"; };
 		A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
+		A7EF9CBA20A0B13A00A71950 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				A795850C2094D6ED00D9DFC1 /* Assets.xcassets */,
 				A795850E2094D6ED00D9DFC1 /* LaunchScreen.storyboard */,
 				A79585112094D6ED00D9DFC1 /* Info.plist */,
+				A7EF9CBA20A0B13A00A71950 /* Settings.plist */,
 				A77B22DF209E081E00D24C38 /* Localizable.strings */,
 			);
 			path = "MercadoPago Payment Example";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79585102094D6ED00D9DFC1 /* LaunchScreen.storyboard in Resources */,
+				A7EF9CBB20A0B13A00A71950 /* Settings.plist in Resources */,
 				A77B22DD209E081E00D24C38 /* Localizable.strings in Resources */,
 				A7AA9A77209A07E40043DAEA /* ThumbTitleCollectionViewCell.xib in Resources */,
 				A795850D2094D6ED00D9DFC1 /* Assets.xcassets in Resources */,
