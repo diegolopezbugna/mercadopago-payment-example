@@ -34,6 +34,16 @@
 		A7DD0F2F209B49DC007D0848 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */; };
 		A7EF9CBB20A0B13A00A71950 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7EF9CBA20A0B13A00A71950 /* Settings.plist */; };
 		A7EF9CBD20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF9CBC20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift */; };
+		A7EF9CC020A0CB3B00A71950 /* DummyPaymentMethodConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF9CBF20A0CB3B00A71950 /* DummyPaymentMethodConnector.swift */; };
+		A7EF9CC120A0CBE700A71950 /* PaymentMethodConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B092097923200FFE3F2 /* PaymentMethodConnector.swift */; };
+		A7EF9CC220A0CBE700A71950 /* CardIssuerConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7192655209CC61D0009AC96 /* CardIssuerConnector.swift */; };
+		A7EF9CC320A0CBE700A71950 /* InstallmentConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A017DF209D1ECB00DB454E /* InstallmentConnector.swift */; };
+		A7EF9CC420A0CC3500A71950 /* BaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A017DD209D18D200DB454E /* BaseConnector.swift */; };
+		A7EF9CC520A0CC3A00A71950 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F9B0620978FC000FFE3F2 /* PaymentMethod.swift */; };
+		A7EF9CC620A0CC3A00A71950 /* CardIssuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7192657209CC6440009AC96 /* CardIssuer.swift */; };
+		A7EF9CC720A0CC3A00A71950 /* Installment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A017E1209D1F2A00DB454E /* Installment.swift */; };
+		A7EF9CC920A0CDA800A71950 /* DummyCardIssuerConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF9CC820A0CDA800A71950 /* DummyCardIssuerConnector.swift */; };
+		A7EF9CCB20A0CE0400A71950 /* DummyInstallmentConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF9CCA20A0CE0400A71950 /* DummyInstallmentConnector.swift */; };
 		A7FB7277209DD75F007A9154 /* InstallmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +92,9 @@
 		A7DD0F2E209B49DC007D0848 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
 		A7EF9CBA20A0B13A00A71950 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		A7EF9CBC20A0BAD500A71950 /* BaseThumbTitleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseThumbTitleCollectionViewController.swift; sourceTree = "<group>"; };
+		A7EF9CBF20A0CB3B00A71950 /* DummyPaymentMethodConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPaymentMethodConnector.swift; sourceTree = "<group>"; };
+		A7EF9CC820A0CDA800A71950 /* DummyCardIssuerConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCardIssuerConnector.swift; sourceTree = "<group>"; };
+		A7EF9CCA20A0CE0400A71950 /* DummyInstallmentConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyInstallmentConnector.swift; sourceTree = "<group>"; };
 		A7FB7276209DD75F007A9154 /* InstallmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +181,7 @@
 		A79585192094D6ED00D9DFC1 /* MercadoPago Payment ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				A7EF9CBE20A0CB0100A71950 /* Mocks */,
 				A795851A2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift */,
 				A795851C2094D6ED00D9DFC1 /* Info.plist */,
 			);
@@ -227,6 +241,16 @@
 				A7B66EEE209A64D80039DE06 /* PayUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A7EF9CBE20A0CB0100A71950 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EF9CBF20A0CB3B00A71950 /* DummyPaymentMethodConnector.swift */,
+				A7EF9CC820A0CDA800A71950 /* DummyCardIssuerConnector.swift */,
+				A7EF9CCA20A0CE0400A71950 /* DummyInstallmentConnector.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EF9CC620A0CC3A00A71950 /* CardIssuer.swift in Sources */,
+				A7EF9CCB20A0CE0400A71950 /* DummyInstallmentConnector.swift in Sources */,
+				A7EF9CC320A0CBE700A71950 /* InstallmentConnector.swift in Sources */,
+				A7EF9CC220A0CBE700A71950 /* CardIssuerConnector.swift in Sources */,
+				A7EF9CC120A0CBE700A71950 /* PaymentMethodConnector.swift in Sources */,
+				A7EF9CC520A0CC3A00A71950 /* PaymentMethod.swift in Sources */,
+				A7EF9CC020A0CB3B00A71950 /* DummyPaymentMethodConnector.swift in Sources */,
+				A7EF9CC720A0CC3A00A71950 /* Installment.swift in Sources */,
+				A7EF9CC920A0CDA800A71950 /* DummyCardIssuerConnector.swift in Sources */,
+				A7EF9CC420A0CC3500A71950 /* BaseConnector.swift in Sources */,
 				A795851B2094D6ED00D9DFC1 /* MercadoPago_Payment_ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

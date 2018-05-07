@@ -21,16 +21,16 @@ class MercadoPago_Payment_ExampleTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testBaseConnectorSettings() {
+        let connector = BaseConnector()
+        XCTAssert(connector.baseUrl!.absoluteString == "https://api.mercadopago.com/v1/")
+        XCTAssert(connector.publicKey == "444a9ef5-8a6b-429f-abdf-587639155d88")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+    // NOTA IMPORTANTE:
+    // PayUseCase debería comunicarse con protocolos en vez de los ViewControllers
+    //  y el Navigator para poder testearlo.
+    // Lo interesante de estos tests sería testear PayUseCase.
+    // Falta mejorar ese aspecto.
+
 }
