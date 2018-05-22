@@ -47,25 +47,6 @@ class BaseThumbTitleCollectionViewController: UIViewController {
     func fillItems() {
         DispatchQueue.main.async {
             self.collectionView?.reloadData()
-            self.fillThumbnails()
-        }
-    }
-    
-    func fillThumbnails() {
-        guard let items = self.items, items.count > 0 else {
-            return
-        }
-        
-        for index in 0...(items.count - 1) {
-            DispatchQueue.global().async { [weak self] in
-                let url = URL(string: items[index].thumbnail!)
-                if let data = try? Data(contentsOf: url!) {
-                    self?.items[index].thumbnailData = data
-                    DispatchQueue.main.async {
-                        self?.collectionView?.reloadItems(at: [IndexPath(row: index, section: 0)])
-                    }
-                }
-            }
         }
     }
 }
@@ -78,13 +59,27 @@ extension BaseThumbTitleCollectionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.thumbTitleCellReuseIdentifier, for: indexPath) as! ThumbTitleCollectionViewCell
-        
-        if let thumbData = items[indexPath.row].thumbnailData {
-            cell.thumbImageView?.image = UIImage(data: thumbData)
+
+        cell.titleLabel.text = items[indexPath.row].title
+        print(items[indexPath.row].title!)
+
+        if let data = items[indexPath.row].thumbnailData {
+            cell.thumbImageView?.image = UIImage(data: data)
         } else {
             cell.thumbImageView?.image = nil
+
+            DispatchQueue.global().async {
+                let url = URL(string: self.items[indexPath.row].thumbnail!)
+                print(url!)
+                if let data = try? Data(contentsOf: url!) {
+                    self.items[indexPath.row].thumbnailData = data
+                    DispatchQueue.main.async {
+                        collectionView.reloadItems(at: [indexPath])
+                        print(indexPath.row)
+                    }
+                }
+            }
         }
-        cell.titleLabel.text = items[indexPath.row].title
         
         return cell
     }
